@@ -13,6 +13,9 @@ logo = """
 """
 
 def initialize():
+  """
+    show logo and a small description about this app at start
+  """
   print(Fore.LIGHTRED_EX+logo,end='')
   print(Style.DIM+"\n ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n",
       Style.DIM+"● ",
@@ -37,9 +40,13 @@ def initialize():
 
 
 def whois_lookup(website):
+  """
+    pass you some information about website or IP address you entered
+  """
   try:
     req = "https://api.hackertarget.com/whois/?q="+website
     res = requests.get(req)
+    # => handle possible errors
     if res.text == "error check your api query":
       print(Fore.LIGHTYELLOW_EX+"* Warning:",Fore.WHITE+"try again ...")
     elif res.text == "error input invalid - enter IP or Hostname":
@@ -57,6 +64,7 @@ if __name__ == "__main__":
   initialize()
   while(True):
     curser = input(Fore.RED+"prometheus"+Fore.WHITE+"@"+Style.NORMAL+Fore.LIGHTGREEN_EX+"~"+Fore.WHITE+": ")
+    # => handle curser input
     if curser == "whois":
       website = input(Fore.RED+"prometheus"+Fore.WHITE+"@"+Style.NORMAL+Fore.LIGHTGREEN_EX+"whois"+Fore.WHITE+": ")
       whois_lookup(website)
