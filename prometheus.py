@@ -22,7 +22,7 @@ def initialize():
       Style.DIM+"mehran.safaripour@gmail.com\n",
       Style.DIM+"● ",
       Style.BRIGHT+"Github :",
-      Style.DIM+"mygithub\n",
+      Style.DIM+"https://github.com/Mehran-SP/Prometheus\n",
       Style.DIM+"● ",
       Style.BRIGHT+"Desceription :",
       Style.DIM+"prometheus is an micro sequeity framework\n",
