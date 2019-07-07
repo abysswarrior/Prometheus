@@ -1,0 +1,5 @@
+# my ignore file
+.vscode
+.directory
+__pycache__/
+*.pyc
