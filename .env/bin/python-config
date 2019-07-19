@@ -1,4 +1,4 @@
-#!/home/mehransp/workspace/python/prometheus/.env/bin/python
+#!/home/mehransp/workspace/git/Prometheus/.env/bin/python
 
 import sys
 import getopt
