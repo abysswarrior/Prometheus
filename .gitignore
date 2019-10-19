@@ -1,4 +1,5 @@
 # my ignore file
+.env
 .vscode
 .directory
 __pycache__/
